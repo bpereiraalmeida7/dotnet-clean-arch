@@ -1,3 +1,5 @@
+using CleanArch.Application.Interfaces;
+using CleanArch.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CleanArch.Api.Controllers
@@ -7,10 +9,12 @@ namespace CleanArch.Api.Controllers
   public class MoviesController : ControllerBase
   {
     private readonly ILogger<MoviesController> _logger;
+    private readonly IMoviesService _moviesService;
 
-    public MoviesController(ILogger<MoviesController> logger)
+    public MoviesController(ILogger<MoviesController> logger, IMoviesService moviesService)
     {
-      _logger = logger;
+        _logger = logger;
+        _moviesService = moviesService;
     }
 
     /// <summary>
@@ -18,9 +22,9 @@ namespace CleanArch.Api.Controllers
     /// </summary>
     /// <returns></returns>
     [HttpGet(Name = "movies")]
-    public string Get()
+    public IEnumerable<Movie> Get()
     {
-      return "Em construção";
+      return _moviesService.GetAll();
     }
   }
 }
