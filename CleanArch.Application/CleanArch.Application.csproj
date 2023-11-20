@@ -10,4 +10,10 @@
     <ProjectReference Include="..\CleanArch.Domain\CleanArch.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="CleanArch.Infra">
+      <HintPath>..\CleanArch.Api\bin\Debug\net6.0\CleanArch.Infra.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

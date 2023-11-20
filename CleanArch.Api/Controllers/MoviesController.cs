@@ -22,9 +22,9 @@ namespace CleanArch.Api.Controllers
     /// </summary>
     /// <returns></returns>
     [HttpGet(Name = "movies")]
-    public IEnumerable<Movie> Get()
+    public ActionResult<IList<Movie>> Get()
     {
-      return _moviesService.GetAll();
+      return Ok(_moviesService.GetAll());
     }
   }
 }
