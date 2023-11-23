@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -8,12 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CleanArch.Domain\CleanArch.Domain.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="CleanArch.Infra">
-      <HintPath>..\CleanArch.Api\bin\Debug\net6.0\CleanArch.Infra.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\CleanArch.Infra\CleanArch.Infra.csproj" />
   </ItemGroup>
 
 </Project>
