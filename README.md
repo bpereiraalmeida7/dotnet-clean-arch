@@ -1,4 +1,4 @@
-# 🚧 Clean Arch .NET
+# 🚧 Clean Arch .NET 
 Modelo de clean architecture em .NET 6, utilizando como exemplo didático do tema, uma API de filmes.
 
 ## Estrutura da aplicação
