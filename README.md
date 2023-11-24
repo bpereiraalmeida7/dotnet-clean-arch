@@ -18,5 +18,3 @@ A aplicação foi feita em .NET 6, utilizando boas práticas e princípios do SO
   |    | - 📁 Interfaces
   |    | - 📁 Repositories
 ```
-
-### Projeto em construção!
