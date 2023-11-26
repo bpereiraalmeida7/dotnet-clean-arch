@@ -3,7 +3,7 @@ Modelo de clean architecture em .NET 6, utilizando como exemplo didático do tem
 
 ## Estrutura da aplicação
 
-A aplicação foi feita em .NET 6, utilizando boas práticas e princípios do SOLID. Segue arquitetura principal, com as responsabilidades separadas em projetos (.dll) diferentes:
+A aplicação foi feita em .NET 6, utilizando boas práticas e princípios do SOLID. Segue arquitetura principal, com as responsabilidades separadas em projetos (.dll) diferentes: 
 
 ```
 📁 
